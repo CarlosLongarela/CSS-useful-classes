@@ -1,0 +1,26 @@
+:root {
+	--color-line: #aaa39d;
+}
+
+.cl-line-centered {
+	display: flex;
+	width: 100%;
+	padding-inline: 0;
+	align-items: center;
+	text-align: center;
+}
+
+.cl-line-centered::before,
+.cl-line-centered::after {
+	content: '';
+	flex: 1;
+	border-bottom: 1px solid var(--color-line);
+}
+
+.cl-line-centered::before {
+	margin-right: 1.5em;
+}
+
+.cl-line-centered::after {
+	margin-left: 1.5em;
+}
