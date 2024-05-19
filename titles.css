@@ -83,13 +83,13 @@
  * Right text with line from start to text
  * similar to: ----- TEXT
  **/
- .cl-line-2-right {
+ .cl-line-from-left {
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
 }
 
-.cl-line-2-right::before {
+.cl-line-from-left::before {
 	content: '';
 	flex-grow: 1;
 	height: var(--line-height);
