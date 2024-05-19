@@ -1,6 +1,7 @@
 :root {
 	--color-line: #aaa39d;
 	--line-height: 1px;
+	--line-separation: 1px;
 	--margin-size: 1.5em;
 }
 
@@ -28,5 +29,34 @@
 }
 
 .cl-line-centered::after {
+	margin-left: var(--margin-size);
+}
+
+/**
+ * Centered text with 2 lines from start to text and from text to end
+ * similar to ===== TEXT =====
+ **/
+ .cl-line-centered-double {
+	display: flex;
+	width: 100%;
+	padding-inline: 0;
+	align-items: center;
+	text-align: center;
+}
+
+.cl-line-centered-double::before,
+.cl-line-centered-double::after {
+	content: '';
+	flex: 1;
+	border-top: var(--line-height) solid var(--color-line);
+	border-bottom: var(--line-height) solid var(--color-line);
+	padding-block: 1px;
+}
+
+.cl-line-centered-double::before {
+	margin-right: var(--margin-size);
+}
+
+.cl-line-centered-double::after {
 	margin-left: var(--margin-size);
 }
