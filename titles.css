@@ -1,5 +1,7 @@
 :root {
 	--color-line: #aaa39d;
+	--line-height: 1px;
+	--margin-size: 1.5em;
 }
 
 .cl-line-centered {
@@ -14,13 +16,13 @@
 .cl-line-centered::after {
 	content: '';
 	flex: 1;
-	border-bottom: 1px solid var(--color-line);
+	border-bottom: var(--line-height) solid var(--color-line);
 }
 
 .cl-line-centered::before {
-	margin-right: 1.5em;
+	margin-right: var(--margin-size);
 }
 
 .cl-line-centered::after {
-	margin-left: 1.5em;
+	margin-left: var(--margin-size);
 }
