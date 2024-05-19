@@ -62,7 +62,7 @@
 }
 
 /**
- * Left text with line from start to text and from text to end
+ * Left text with line from text to end
  * similar to: TEXT -----
  **/
 .cl-line-2-right {
@@ -77,4 +77,22 @@
 	height: var(--line-height);
 	background: var(--color-line);
 	margin-left: var(--margin-size);
+}
+
+/**
+ * Right text with line from start to text
+ * similar to: ----- TEXT
+ **/
+ .cl-line-2-right {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.cl-line-2-right::before {
+	content: '';
+	flex-grow: 1;
+	height: var(--line-height);
+	background: var(--color-line);
+	margin-right: var(--margin-size);
 }
