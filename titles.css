@@ -7,7 +7,7 @@
 
 /**
  * Centered text with line from start to text and from text to end
- * similar to ----- TEXT -----
+ * similar to: ----- TEXT -----
  **/
 .cl-line-centered {
 	display: flex;
@@ -34,7 +34,7 @@
 
 /**
  * Centered text with 2 lines from start to text and from text to end
- * similar to ===== TEXT =====
+ * similar to: ===== TEXT =====
  **/
  .cl-line-centered-double {
 	display: flex;
@@ -50,7 +50,7 @@
 	flex: 1;
 	border-top: var(--line-height) solid var(--color-line);
 	border-bottom: var(--line-height) solid var(--color-line);
-	padding-block: 1px;
+	padding-block: var(--line-separation);
 }
 
 .cl-line-centered-double::before {
@@ -58,5 +58,23 @@
 }
 
 .cl-line-centered-double::after {
+	margin-left: var(--margin-size);
+}
+
+/**
+ * Left text with line from start to text and from text to end
+ * similar to: TEXT -----
+ **/
+.cl-line-2-right {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.cl-line-2-right::after {
+	content: '';
+	flex-grow: 1;
+	height: var(--line-height);
+	background: var(--color-line);
 	margin-left: var(--margin-size);
 }
