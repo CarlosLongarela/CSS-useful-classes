@@ -6,7 +6,7 @@
 
 /**
  * Centered text with line from start to text and from text to end
- * like ----- TEXT -----
+ * similar to ----- TEXT -----
  **/
 .cl-line-centered {
 	display: flex;
