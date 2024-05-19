@@ -4,6 +4,10 @@
 	--margin-size: 1.5em;
 }
 
+/**
+ * Centered text with line from start to text and from text to end
+ * like ----- TEXT -----
+ **/
 .cl-line-centered {
 	display: flex;
 	width: 100%;
